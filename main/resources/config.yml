@@ -1,0 +1,26 @@
+Item:
+  - si-ka-saisu
+  - PKazan_Hazyamaru
+  - cl3_yari
+  - 夢見鳥の剣
+  - lifeFFA_1
+  - lifeFFA_2
+  - lifeFFA_teleportBottle
+
+Armor:
+  - lifeFFA_C
+  - lifeFFA_F
+  - lifeFFA_H
+  - lifeFFA_L
+
+Player:
+  #ステータス
+  Speed: 0.0
+  Damage: 0.0
+  Armor: 0.0
+  Toughness: 0.0
+  AttackSpeed: 0.0
+  Health: 20.0
+
+#残機
+PlayerLife: 2
