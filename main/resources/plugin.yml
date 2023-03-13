@@ -7,7 +7,13 @@ commands:
   pvp:
     permission: LifePvP.Command.pvp
     description: "pvpできるやつ。"
+  pvpItemList:
+    permission: LifePvP.Command.pvpItemList
+    description: "確認用。"
+    aliases: [PIL, pil]
 
 permissions:
   LifePvP.Command.pvp:
     default: false
+  LifePvP.Command.pvpItemList:
+    default: true

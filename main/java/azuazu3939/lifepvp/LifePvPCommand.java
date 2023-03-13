@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class LifePvPCommand implements CommandExecutor {
 
-    protected static Map<Player, Integer> life = new HashMap<>();
+    static Map<Player, Integer> life = new HashMap<>();
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         try {
@@ -65,12 +65,12 @@ public class LifePvPCommand implements CommandExecutor {
                         }
                     }
                 } else {
-                    name.sendMessage(ChatColor.RED + "LifeFFAには指定アイテム以外のスキル持ちmmアイテムは持ち込めません。");
+                    name.sendMessage(ChatColor.RED + "LifeFFAには指定アイテム以外のアイテムは持ち込めません。/pilで持ち込み可能なアイテムを確認できます。");
                 }
             }
             return false;
         } catch (Exception e) {
-            e.printStackTrace();
+            sender.sendMessage(ChatColor.RED + "正しく入力してください。");
             return true;
         }
     }
